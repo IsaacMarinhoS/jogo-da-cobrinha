@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jogo da Cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="borda">
+        <div class="icone" id="gameContainer">
+            <div id="infoContainer">
+                <!-- Imagem da comida -->
+                <img id="foodImage" src="png/comida.webp" alt="Comida" width="30" height="30">
+                <!-- Contador da comida -->
+
+
+                <div id="foodCount">0</div>
+
+                <!-- Troféu e Pontuação Máxima -->
+                <div id="scoreContainer">
+                    <img class="trofeu" id="trophy" src="png/trofeu.png" alt="Trophy" />
+                    <span class="numero" id="maxScore"></span>
+                </div>
+
+                <button class="som" id="muteButton">
+                    <img id="muteIcon" src="png/volume.png" alt="Som Ligado" width="40">
+                </button>
+
+
+            </div>
+
+            <canvas class="tabuleiro" id="gameCanvas" width="520" height="520"></canvas>
+
+        </div>
+
+        <!-- Botão de Play -->
+        <button class="play" id="playButton">Play</button>
+
+
+    </div>
+
+    <div class="scroll-container">
+        <!-- Seu jogo aqui -->
+
+
+
+        <div id="gameInfo">
+
+            <p>Este jogo foi desenvolvido por <strong>Isaac Marinho Da Silva Rosemback</strong>.</p>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

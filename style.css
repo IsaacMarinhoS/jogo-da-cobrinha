@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 63, 44);
+    margin: 0.5%;
+}
+
+
+.tabuleiro {
+    border: 5px solid #ffffff;
+    /* Borda de 5px de espessura, cor preta */
+}
+
+
+
+canvas {
+    background-image: url('png/fundo.jpeg');
+    /* Caminho para a imagem de fundo */
+    background-size: cover;
+    /* Garante que a imagem cubra todo o canvas */
+    background-position: center;
+    /* Centraliza a imagem no canvas */
+    display: block;
+    margin: 10px auto;
+
+
+}
+
+h1 {
+    color: lime;
+}
+
+p {
+    color: white;
+}
+
+.play {
+    padding: 6px 20px;
+    font-size: 16px;
+    background-color: #a2d149;
+    font-size: 16px;
+}
+
+#infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 5;
+
+}
+
+#foodCount {
+    font-size: 20px;
+}
+
+.trofeu {
+    width: 45px;
+}
+
+#scoreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+#muteButton img {
+    width: 30px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    /* Mantém a proporção */
+}
+
+
+@media (max-width: 500px) {
+
+    body {
+        margin: 3%;
+    }
+
+    canvas {
+
+        width: 395px;
+
+
+    }
+
+
+}
+
+@media (max-width: 390px) {
+
+
+    canvas {
+        width: 380px;
+    }
+}
+
+.som {
+    background-color: transparent;
+    border-color: transparent;
+
+
+}
+
+#gameInfo {
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    padding: 10px;
+    margin-top: -2px;
+    border-radius: 10px;
+
+
+}
